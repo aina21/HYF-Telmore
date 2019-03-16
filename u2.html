@@ -45,11 +45,16 @@
 
 }
 
+p{
+   font-weight: lighter;
+   font-family: OpenSansRegular, sans-serif;
+}
 body {
    margin: 0;
 }
 
 a {
+   font-family: OpenSansRegular, sans-serif;
    outline: none;
    border: 0;
    transition: 200ms;
@@ -59,11 +64,12 @@ a {
    -webkit-transition-timing-function: ease-in-out;
 }
 
-h1 {
+span {
    font-family: OpenSansExtraBold, sans-serif;
    text-align: center;
    text-transform: uppercase;
    font-size: 23px;
+   font-weight: bold;
 }
 
 ul{
@@ -114,10 +120,7 @@ header a.active {
 
 header span {
    color: white;
-   text-transform: uppercase;
    font-size: 12px;
-   font-weight: bold;
-   font-family: OpenSansExtraBold, sans-serif;
 }
 
 .header-right span:hover {
@@ -134,18 +137,22 @@ header span {
    
    background-color: #4069f1;
    font-family: OpenSansExtraBold, sans-serif;
-   padding-right: 15%;
-   padding-left: 15%;
+   /*padding-right: ;*/
+   font-size: 13px;
+   padding-left: 12%;
 }
 
 .nav-menu a {
    float: left;
    color: #f2f2f2;
    text-align: center;
-   padding: 14px 16px;
+   padding: 10px 15px;
+   padding-top: 10px;
+   padding-bottom: 10px;
    text-decoration: none;
    text-transform: uppercase;
    font-size: 14px;
+   font-weight: bold;
 }
 
 .nav-menu a:hover {
@@ -163,20 +170,25 @@ header span {
    text-align: center;
    color: white;
 
-   padding-top: 25px;
+   padding-top: 30px;
    padding-bottom: 3%;
-   padding-right: 10%;
+   padding-right: 15%;
    padding-left: 10%;
    
 }
 
 .main-content h1 {
-   font-size: 18px;
+   font-size: 24px;
+   font-weight: bold;
+   font-family: OpenSansExtraBold, sans-serif;
+   text-align: center;
+   text-transform: uppercase;
 }
 
 .main-content h2 {
    font-size: 18px;
-   font-family: sans-serif;
+   text-transform: uppercase;
+   font-family: OpenSansExtraBold, sans-serif;
    line-height: 18px;
    margin-bottom: -15px;
 }
@@ -184,7 +196,6 @@ header span {
 .main-content p {
    color: white;
    font-size: 10px;
-   font-family: OpenSansRegular, sans-serif;
 }
 
 
@@ -198,7 +209,8 @@ header span {
    text-align: center;
    text-decoration: none;
    display: inline-block;
-   margin-top: 3%;
+   margin-top: 50px;
+   margin-bottom: 20px;
 
 }
 .main-content a:hover, a:active {
@@ -264,7 +276,7 @@ header span {
 
 /*************************************/
 
-.content h1 {
+.content span {
    font-size: 24px;
 }
 
@@ -276,6 +288,8 @@ header span {
    height: 48px;
    width: 48px;
    text-align: center;
+   margin-top: 30px;
+
 }
 
 .content-menu-r {
@@ -294,7 +308,7 @@ header span {
 
 .content-menu-c a {
    font-size: 16px;
-   font-family: OpenSansRegular, sans-serif;
+   font-weight: lighter;
    text-align: center;
    color: #0628b9;
    line-height: 13px;
@@ -373,12 +387,14 @@ footer h2 {
    float: left;
    padding: 30px;
    color: white;
+   line-height: 24px;
+
 }
 
 .footer-col h2 {
    color: white;
    text-transform: uppercase;
-   font-size: 14px;
+   font-size: 16px;
    text-align: left;
 }
 
@@ -387,6 +403,7 @@ footer h2 {
    text-align: left;
    font-size: 14px;
    text-decoration: none;
+   font-weight: lighter;
 }
 
 .footer-col a:hover {
@@ -420,7 +437,7 @@ footer h2 {
          <!-- header svg icon in menu-->
          <div class="header-right">
             <a href="#">
-               <svg viewBox="0 0 512 512" class= "svghover">
+               <svg role="img" viewBox="0 0 512 512" class= "svghover">
                   <path  d="M313.6 288c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4zM416 464c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16v-41.6C32 365.9 77.9 320 134.4 320c19.6 0 39.1 16 89.6 16 50.4 0 70-16 89.6-16 56.5 0 102.4 45.9 102.4 102.4V464zM224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm0-224c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z">
                   </path>
                   <span>MIT TELEMORE</span> 
@@ -430,7 +447,7 @@ footer h2 {
          <!-- phone -->
          <div class="header-right">
             <a href="#">
-               <svg viewBox="0 0 512 512" class= "svghover">
+               <svg role="img" viewBox="0 0 512 512" class= "svghover">
                   <path d="M487.8 24.1L387 .8c-14.7-3.4-29.8 4.2-35.8 18.1l-46.5 108.5c-5.5 12.7-1.8 27.7 8.9 36.5l53.9 44.1c-34 69.2-90.3 125.6-159.6 159.6l-44.1-53.9c-8.8-10.7-23.8-14.4-36.5-8.9L18.9 351.3C5 357.3-2.6 372.3.8 387L24 487.7C27.3 502 39.9 512 54.5 512 306.7 512 512 307.8 512 54.5c0-14.6-10-27.2-24.2-30.4zM55.1 480l-23-99.6 107.4-46 59.5 72.8c103.6-48.6 159.7-104.9 208.1-208.1l-72.8-59.5 46-107.4 99.6 23C479.7 289.7 289.6 479.7 55.1 480z">
                   </path>
                </svg>
@@ -439,7 +456,7 @@ footer h2 {
          <div class="header-right">
             <!-- magnifier -->
             <a href="#">
-               <svg viewBox="0 0 512 512" class= "svghover">
+               <svg role="img" viewBox="0 0 512 512" class= "svghover">
                   <path d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z">
                   </path>
                </svg>
@@ -462,13 +479,13 @@ footer h2 {
          <div class="main-content">
             <img class="photo" src="http://via.placeholder.com/400x180" alt="image in main content" >
             <h1>Skrive dig ovp til den nye galaxy s10eller s10+</h1>
-            <h2 >-og få de nye, trådløse høretelefoner </h2><h2> galaxy buds med  købet (værdi 1.199 kr.)</h2>
+            <h2 > - og få de nye, trådløse høretelefoner</h2><h2>galaxy buds med i købet (værdi 1.199 kr.)</h2>
             <a>SKRIVE DIG OP</a>
             <p >Tilbud gælder ved køb af Samsung Galaxy S10/S10+ i Danmark, fra opskrivninger mellem den 20.02.19-07.03.19 og kan ikke kombineres med andre tilbud. Galaxy Buds har en værdi af 1.999 kr. Gælder ikke ved køb af Galaxy S10e. For at få dine Galaxy Buds tilsendt, skal købet registeres med din Samsung Account i Samsung Members-appen. De trådløse høretelefoner, Samsung Galaxy Buds, leveres separat og ikke sammen men mobilen. Returneres mobilen, skal høretelefoneres også returenes. Ellers vil beløbet for dem (1.999 kr.) blive faktureret separat. Leveres kun i Norden, og tilbuddet gælder kun i den angivne kampagneperiode, eller sp længe lager haves.</p>
          </div>
          <!-- Content !-->
          <div class="content">
-            <h1>få mobilabonnement med underholdning</h1>
+            <p><span>få mobilabonnement med underholdning</span></p>
             <p>+De nyeste mobiltelefoner, Danmarks bedste mobilnetværk og kundeservice</p>
             <!-- Content menu !-->
             <div class="content-menu-r " >
